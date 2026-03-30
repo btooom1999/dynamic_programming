@@ -15,7 +15,8 @@ mod min_cost_climbing_stairs;
 mod nth_tribonacci_number;
 mod house_robber;
 mod longest_palindromic_substring;
+mod palindromic_substrings;
 
 fn main() {
-   longest_palindromic_substring::main();
+   palindromic_substrings::main();
 }
