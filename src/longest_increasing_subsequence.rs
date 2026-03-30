@@ -1,7 +1,7 @@
 pub fn main() {
-    let arr = [1, 2, 5, 4 ,6, 2];
+    let arr = [1, 2, 5, 4, 6, 2];
     let mut f: Vec<i32> = Vec::new();
-    
+
     let mut longest = 0;
 
     for i in 0..arr.len() {

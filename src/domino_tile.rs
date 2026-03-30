@@ -6,7 +6,7 @@ pub fn main() {
     dp[2] = 2; // horizontal tile 2x2
 
     for i in 3..=n {
-        dp[i] = dp[i-1] + dp[i-2];
+        dp[i] = dp[i - 1] + dp[i - 2];
     }
 
     println!("{}", dp[n]);

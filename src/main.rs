@@ -1,16 +1,17 @@
 #![allow(unused)]
 
-mod bulls_and_cows;
-mod buy_tickets_problem;
-mod domino_tile;
 mod fibonacci;
-mod hall_problem;
 mod longest_increasing_subsequence;
-mod longest_palindromic_subsequence;
+mod buy_tickets_problem;
 mod maximum_path_sum_in_a_matrix;
-mod minimum_edge_cover;
+mod domino_tile;
 mod steps_problem;
+mod minimum_edge_cover;
+mod hall_problem;
+mod bulls_and_cows;
+mod longest_palindromic_subsequence;
+mod climbing_stairs;
 
 fn main() {
-    longest_palindromic_subsequence::main();
+   climbing_stairs::main();
 }
