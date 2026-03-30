@@ -11,7 +11,9 @@ mod hall_problem;
 mod bulls_and_cows;
 mod longest_palindromic_subsequence;
 mod climbing_stairs;
+mod min_cost_climbing_stairs;
+mod nth_tribonacci_number;
 
 fn main() {
-   climbing_stairs::main();
+   nth_tribonacci_number::main();
 }
