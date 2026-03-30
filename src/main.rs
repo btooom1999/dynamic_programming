@@ -13,7 +13,8 @@ mod longest_palindromic_subsequence;
 mod climbing_stairs;
 mod min_cost_climbing_stairs;
 mod nth_tribonacci_number;
+mod house_robber;
 
 fn main() {
-   nth_tribonacci_number::main();
+   house_robber::main();
 }
