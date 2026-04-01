@@ -1,7 +1,6 @@
 #![allow(unused)]
 
 mod fibonacci;
-mod longest_increasing_subsequence;
 mod buy_tickets_problem;
 mod maximum_path_sum_in_a_matrix;
 mod domino_tile;
@@ -17,7 +16,8 @@ mod house_robber;
 mod longest_palindromic_substring;
 mod palindromic_substrings;
 mod word_break;
+mod longest_increasing_subsequence;
 
 fn main() {
-   word_break::main();
+   longest_increasing_subsequence::main();
 }
