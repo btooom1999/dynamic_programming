@@ -16,7 +16,8 @@ mod nth_tribonacci_number;
 mod house_robber;
 mod longest_palindromic_substring;
 mod palindromic_substrings;
+mod word_break;
 
 fn main() {
-   palindromic_substrings::main();
+   word_break::main();
 }
