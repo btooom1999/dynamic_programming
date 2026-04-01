@@ -21,7 +21,8 @@ mod partition_equal_subset_sum;
 mod triangle;
 mod delete_and_earn;
 mod combination_sum_iv;
+mod perfect_squares;
 
 fn main() {
-   combination_sum_iv::main();
+   perfect_squares::main();
 }
