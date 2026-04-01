@@ -17,7 +17,9 @@ mod longest_palindromic_substring;
 mod palindromic_substrings;
 mod word_break;
 mod longest_increasing_subsequence;
+mod partition_equal_subset_sum;
+mod triangle;
 
 fn main() {
-   longest_increasing_subsequence::main();
+   triangle::main();
 }
