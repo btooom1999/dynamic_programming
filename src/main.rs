@@ -22,7 +22,8 @@ mod triangle;
 mod delete_and_earn;
 mod combination_sum_iv;
 mod perfect_squares;
+mod check_if_there_is_a_valid_partition_for_the_array;
 
 fn main() {
-   perfect_squares::main();
+   check_if_there_is_a_valid_partition_for_the_array::main();
 }
