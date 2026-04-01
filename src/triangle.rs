@@ -1,23 +1,15 @@
-fn dfs(
-    index: usize,
-    triangle: &Vec<Vec<i32>>,
-    dp: Vec<i32>,
-) -> Vec<i32> {
-    let mut res = Vec::new();
-    for i in 0..triangle[index].len() {
-        let num = triangle[index][i];
-        res.push((num+dp[i]).min(num+dp[i+1]));
-    }
-
-    if index == 0 {
-        res
-    } else {
-        dfs(index-1, triangle, res)
-    }
-}
-
 fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {
-    dfs(triangle.len()-1, &triangle, vec![0; triangle[triangle.len()-1].len()+1])[0]
+    let mut dp = vec![vec![]; triangle.len()+1];
+    dp[triangle.len()] = vec![0; triangle.len()+1];
+
+    for i in (0..triangle.len()).rev() {
+        for (j, num) in triangle[i].iter().enumerate() {
+            let res = (num+dp[i+1][j]).min(num+dp[i+1][j+1]);
+            dp[i].push(res);
+        }
+    }
+
+    dp[0][0]
 }
 
 pub fn main() {
