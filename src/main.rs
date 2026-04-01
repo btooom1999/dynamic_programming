@@ -20,7 +20,8 @@ mod longest_increasing_subsequence;
 mod partition_equal_subset_sum;
 mod triangle;
 mod delete_and_earn;
+mod combination_sum_iv;
 
 fn main() {
-   delete_and_earn::main();
+   combination_sum_iv::main();
 }
