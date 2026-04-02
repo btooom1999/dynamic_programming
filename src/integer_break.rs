@@ -21,8 +21,6 @@ fn integer_break(n: i32) -> i32 {
     dp[1] = 1;
     dfs(&mut dp, n as usize, n as usize);
 
-    println!("{:?}", dp);
-
     dp[n as usize]
 }
 
