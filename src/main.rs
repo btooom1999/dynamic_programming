@@ -26,7 +26,8 @@ mod check_if_there_is_a_valid_partition_for_the_array;
 mod minimum_cost_for_tickets;
 mod integer_break;
 mod number_of_longest_increasing_subsequence;
+mod solving_questions_with_brainpower;
 
 fn main() {
-   number_of_longest_increasing_subsequence::main();
+   solving_questions_with_brainpower::main();
 }
