@@ -27,7 +27,8 @@ mod minimum_cost_for_tickets;
 mod integer_break;
 mod number_of_longest_increasing_subsequence;
 mod solving_questions_with_brainpower;
+mod count_ways_to_build_good_strings;
 
 fn main() {
-   solving_questions_with_brainpower::main();
+   count_ways_to_build_good_strings::main();
 }
