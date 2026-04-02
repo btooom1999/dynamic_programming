@@ -24,7 +24,8 @@ mod combination_sum_iv;
 mod perfect_squares;
 mod check_if_there_is_a_valid_partition_for_the_array;
 mod minimum_cost_for_tickets;
+mod integer_break;
 
 fn main() {
-   minimum_cost_for_tickets::main();
+   integer_break::main();
 }
