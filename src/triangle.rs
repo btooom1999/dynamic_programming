@@ -4,7 +4,7 @@ fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {
 
     for i in (0..triangle.len()).rev() {
         for (j, num) in triangle[i].iter().enumerate() {
-            let res = (num+dp[i+1][j]).min(num+dp[i+1][j+1]);
+            let res = num + dp[i+1][j].min(dp[i+1][j+1]);
             dp[i].push(res);
         }
     }

@@ -23,7 +23,8 @@ mod delete_and_earn;
 mod combination_sum_iv;
 mod perfect_squares;
 mod check_if_there_is_a_valid_partition_for_the_array;
+mod minimum_cost_for_tickets;
 
 fn main() {
-   check_if_there_is_a_valid_partition_for_the_array::main();
+   minimum_cost_for_tickets::main();
 }
