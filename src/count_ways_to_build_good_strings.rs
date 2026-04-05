@@ -2,7 +2,6 @@ use std::collections::HashMap;
 
 const MOD: i32 = 1_000_000_007;
 
-
 fn count_good_strings(low: i32, high: i32, zero: i32, one: i32) -> i32 {
     let low = low as usize;
     let high = high as usize;
