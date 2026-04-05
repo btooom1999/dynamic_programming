@@ -29,7 +29,8 @@ mod number_of_longest_increasing_subsequence;
 mod solving_questions_with_brainpower;
 mod count_ways_to_build_good_strings;
 mod best_team_with_no_conflicts;
+mod longest_string_chain;
 
 fn main() {
-   best_team_with_no_conflicts::main();
+   longest_string_chain::main();
 }
