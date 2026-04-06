@@ -33,7 +33,8 @@ mod longest_string_chain;
 mod knight_dialer;
 mod largest_divisible_subset;
 mod partition_array_for_maximum_sum;
+mod uncrossed_lines;
 
 fn main() {
-   partition_array_for_maximum_sum::main();
+   uncrossed_lines::main();
 }
