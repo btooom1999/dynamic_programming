@@ -31,7 +31,8 @@ mod count_ways_to_build_good_strings;
 mod best_team_with_no_conflicts;
 mod longest_string_chain;
 mod knight_dialer;
+mod largest_divisible_subset;
 
 fn main() {
-   knight_dialer::main();
+   largest_divisible_subset::main();
 }
