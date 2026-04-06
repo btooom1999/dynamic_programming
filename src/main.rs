@@ -32,7 +32,8 @@ mod best_team_with_no_conflicts;
 mod longest_string_chain;
 mod knight_dialer;
 mod largest_divisible_subset;
+mod partition_array_for_maximum_sum;
 
 fn main() {
-   partition_equal_subset_sum::main();
+   partition_array_for_maximum_sum::main();
 }
