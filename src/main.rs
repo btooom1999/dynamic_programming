@@ -34,5 +34,5 @@ mod knight_dialer;
 mod largest_divisible_subset;
 
 fn main() {
-   largest_divisible_subset::main();
+   partition_equal_subset_sum::main();
 }
