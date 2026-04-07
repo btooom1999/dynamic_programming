@@ -34,7 +34,8 @@ mod knight_dialer;
 mod largest_divisible_subset;
 mod partition_array_for_maximum_sum;
 mod uncrossed_lines;
+mod filling_bookcase_shelves;
 
 fn main() {
-   uncrossed_lines::main();
+   filling_bookcase_shelves::main();
 }
