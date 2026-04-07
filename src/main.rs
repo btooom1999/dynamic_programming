@@ -12,7 +12,6 @@ mod longest_palindromic_subsequence;
 mod climbing_stairs;
 mod min_cost_climbing_stairs;
 mod nth_tribonacci_number;
-mod house_robber;
 mod longest_palindromic_substring;
 mod palindromic_substrings;
 mod word_break;
@@ -35,7 +34,9 @@ mod largest_divisible_subset;
 mod partition_array_for_maximum_sum;
 mod uncrossed_lines;
 mod filling_bookcase_shelves;
+mod house_robber;
+mod house_robber_3;
 
 fn main() {
-   filling_bookcase_shelves::main();
+   house_robber_3::main();
 }
