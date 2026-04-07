@@ -36,7 +36,8 @@ mod uncrossed_lines;
 mod filling_bookcase_shelves;
 mod house_robber;
 mod house_robber_3;
+mod extra_characters_in_a_string;
 
 fn main() {
-   house_robber_3::main();
+   extra_characters_in_a_string::main();
 }
