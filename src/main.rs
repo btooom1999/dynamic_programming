@@ -45,7 +45,8 @@ mod jump_game;
 mod jump_game_2;
 mod jump_game_7;
 mod hand_of_straights;
+mod divide_array_in_sets_of_k_consecutive_numbers;
 
 fn main() {
-   hand_of_straights::main();
+   divide_array_in_sets_of_k_consecutive_numbers::main();
 }
