@@ -46,7 +46,8 @@ mod jump_game_2;
 mod jump_game_7;
 mod hand_of_straights;
 mod divide_array_in_sets_of_k_consecutive_numbers;
+mod make_two_arrays_equal_by_reversing_subarrays;
 
 fn main() {
-   divide_array_in_sets_of_k_consecutive_numbers::main();
+   make_two_arrays_equal_by_reversing_subarrays::main();
 }
