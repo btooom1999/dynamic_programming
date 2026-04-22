@@ -41,7 +41,8 @@ mod maximum_subarray;
 mod maximum_absolute_sum_of_any_subarray;
 mod maximum_sum_cicurlar_subarray;
 mod time_needed_to_rearrange_a_binary_string;
+mod jump_game;
 
 fn main() {
-   time_needed_to_rearrange_a_binary_string::main();
+   jump_game::main();
 }
