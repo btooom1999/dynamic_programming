@@ -40,7 +40,8 @@ mod extra_characters_in_a_string;
 mod maximum_subarray;
 mod maximum_absolute_sum_of_any_subarray;
 mod maximum_sum_cicurlar_subarray;
+mod time_needed_to_rearrange_a_binary_string;
 
 fn main() {
-   maximum_sum_cicurlar_subarray::main();
+   time_needed_to_rearrange_a_binary_string::main();
 }
