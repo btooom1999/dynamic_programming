@@ -44,10 +44,7 @@ mod time_needed_to_rearrange_a_binary_string;
 mod jump_game;
 mod jump_game_2;
 mod jump_game_7;
-mod hand_of_straights;
-mod divide_array_in_sets_of_k_consecutive_numbers;
-mod make_two_arrays_equal_by_reversing_subarrays;
 
 fn main() {
-   make_two_arrays_equal_by_reversing_subarrays::main();
+   jump_game_7::main();
 }
