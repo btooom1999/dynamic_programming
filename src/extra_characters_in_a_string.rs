@@ -30,7 +30,6 @@ fn dfs(
         let mut j = i;
 
         let mut valid_strings = Vec::new();
-
         while j < s.len() && cur_trie.children[(s[j]-b'a') as usize].is_some() {
             str.push(s[j] as char);
             cur_trie = cur_trie.children[(s[j]-b'a') as usize].as_mut().unwrap();

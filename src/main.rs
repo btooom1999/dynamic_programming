@@ -37,7 +37,8 @@ mod filling_bookcase_shelves;
 mod house_robber;
 mod house_robber_3;
 mod extra_characters_in_a_string;
+mod maximum_subarray;
 
 fn main() {
-   extra_characters_in_a_string::main();
+   maximum_subarray::main();
 }
