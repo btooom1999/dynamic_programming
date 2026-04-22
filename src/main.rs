@@ -38,7 +38,8 @@ mod house_robber;
 mod house_robber_3;
 mod extra_characters_in_a_string;
 mod maximum_subarray;
+mod maximum_absolute_sum_of_any_subarray;
 
 fn main() {
-   maximum_subarray::main();
+   maximum_absolute_sum_of_any_subarray::main();
 }
