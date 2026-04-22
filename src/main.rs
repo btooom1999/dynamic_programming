@@ -43,7 +43,8 @@ mod maximum_sum_cicurlar_subarray;
 mod time_needed_to_rearrange_a_binary_string;
 mod jump_game;
 mod jump_game_2;
+mod jump_game_7;
 
 fn main() {
-   jump_game_2::main();
+   jump_game_7::main();
 }
