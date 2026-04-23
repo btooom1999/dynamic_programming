@@ -45,7 +45,8 @@ mod jump_game;
 mod jump_game_2;
 mod jump_game_7;
 mod jump_game_6;
+mod jump_game_9;
 
 fn main() {
-   jump_game_6::main();
+   jump_game_9::main();
 }
