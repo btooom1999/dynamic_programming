@@ -46,8 +46,7 @@ mod jump_game_2;
 mod jump_game_7;
 mod jump_game_6;
 mod jump_game_9;
-mod minimum_number_of_changes_to_make_binary_string_beautiful;
 
 fn main() {
-   minimum_number_of_changes_to_make_binary_string_beautiful::main();
+   jump_game_9::main();
 }
