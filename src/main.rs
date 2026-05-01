@@ -48,7 +48,8 @@ mod jump_game_6;
 mod jump_game_9;
 mod unique_paths;
 mod unique_paths_2;
+mod minimum_path_sum;
 
 fn main() {
-   unique_paths_2::main();
+   minimum_path_sum::main();
 }
