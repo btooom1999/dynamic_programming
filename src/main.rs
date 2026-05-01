@@ -47,7 +47,8 @@ mod jump_game_7;
 mod jump_game_6;
 mod jump_game_9;
 mod unique_paths;
+mod unique_paths_2;
 
 fn main() {
-   unique_paths::main();
+   unique_paths_2::main();
 }
