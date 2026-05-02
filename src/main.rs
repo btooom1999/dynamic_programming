@@ -50,7 +50,8 @@ mod unique_paths;
 mod unique_paths_2;
 mod minimum_path_sum;
 mod longest_common_subsequence;
+mod length_of_longest_fibonacci_subsequence;
 
 fn main() {
-   longest_common_subsequence::main();
+   length_of_longest_fibonacci_subsequence::main();
 }
