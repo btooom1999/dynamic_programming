@@ -49,7 +49,8 @@ mod jump_game_9;
 mod unique_paths;
 mod unique_paths_2;
 mod minimum_path_sum;
+mod longest_common_subsequence;
 
 fn main() {
-   minimum_path_sum::main();
+   longest_common_subsequence::main();
 }
