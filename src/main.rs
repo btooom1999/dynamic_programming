@@ -51,7 +51,8 @@ mod unique_paths_2;
 mod minimum_path_sum;
 mod longest_common_subsequence;
 mod length_of_longest_fibonacci_subsequence;
+mod best_time_to_buy_and_sell_stock_with_cooldown;
 
 fn main() {
-   length_of_longest_fibonacci_subsequence::main();
+   best_time_to_buy_and_sell_stock_with_cooldown::main();
 }
