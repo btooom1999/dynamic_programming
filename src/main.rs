@@ -53,7 +53,8 @@ mod longest_common_subsequence;
 mod length_of_longest_fibonacci_subsequence;
 mod best_time_to_buy_and_sell_stock_with_cooldown;
 mod coin_change_2;
+mod stone_game;
 
 fn main() {
-   coin_change_2::main();
+   stone_game::main();
 }
