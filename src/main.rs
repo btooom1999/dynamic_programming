@@ -56,7 +56,8 @@ mod coin_change_2;
 mod stone_game;
 mod maximum_square;
 mod count_square_submatrices_with_all_ones;
+mod ones_and_zeroes;
 
 fn main() {
-   count_square_submatrices_with_all_ones::main();
+   ones_and_zeroes::main();
 }
