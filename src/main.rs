@@ -55,7 +55,8 @@ mod best_time_to_buy_and_sell_stock_with_cooldown;
 mod coin_change_2;
 mod stone_game;
 mod maximum_square;
+mod count_square_submatrices_with_all_ones;
 
 fn main() {
-   maximum_square::main();
+   count_square_submatrices_with_all_ones::main();
 }
