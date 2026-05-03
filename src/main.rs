@@ -54,7 +54,8 @@ mod length_of_longest_fibonacci_subsequence;
 mod best_time_to_buy_and_sell_stock_with_cooldown;
 mod coin_change_2;
 mod stone_game;
+mod maximum_square;
 
 fn main() {
-   stone_game::main();
+   maximum_square::main();
 }
