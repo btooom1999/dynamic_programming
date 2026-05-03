@@ -57,7 +57,8 @@ mod stone_game;
 mod maximum_square;
 mod count_square_submatrices_with_all_ones;
 mod ones_and_zeroes;
+mod two_keys_keyboard;
 
 fn main() {
-   ones_and_zeroes::main();
+   two_keys_keyboard::main();
 }
