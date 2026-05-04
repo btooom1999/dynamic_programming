@@ -58,7 +58,8 @@ mod maximum_square;
 mod count_square_submatrices_with_all_ones;
 mod ones_and_zeroes;
 mod two_keys_keyboard;
+mod largest_sum_of_averages;
 
 fn main() {
-   two_keys_keyboard::main();
+   largest_sum_of_averages::main();
 }
