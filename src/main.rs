@@ -59,7 +59,9 @@ mod count_square_submatrices_with_all_ones;
 mod ones_and_zeroes;
 mod two_keys_keyboard;
 mod largest_sum_of_averages;
+mod largest_plus_sign;
+mod largest_1_bordered_square;
 
 fn main() {
-   largest_sum_of_averages::main();
+   largest_1_bordered_square::main();
 }
