@@ -62,6 +62,8 @@ mod largest_sum_of_averages;
 mod largest_plus_sign;
 mod largest_1_bordered_square;
 mod target_sum;
+mod edit_distance;
+mod number_of_dice_rolls_with_target_sum;
 
 fn main() {
    target_sum::main();
