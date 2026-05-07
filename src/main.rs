@@ -61,7 +61,8 @@ mod two_keys_keyboard;
 mod largest_sum_of_averages;
 mod largest_plus_sign;
 mod largest_1_bordered_square;
+mod target_sum;
 
 fn main() {
-   largest_1_bordered_square::main();
+   target_sum::main();
 }
