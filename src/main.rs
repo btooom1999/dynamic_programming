@@ -64,7 +64,8 @@ mod largest_1_bordered_square;
 mod target_sum;
 mod edit_distance;
 mod number_of_dice_rolls_with_target_sum;
+mod minimum_falling_path_sum;
 
 fn main() {
-   target_sum::main();
+   minimum_falling_path_sum::main();
 }
