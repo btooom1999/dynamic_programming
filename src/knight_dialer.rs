@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 const MOD: i64 = 1_000_000_007;
 
 fn knight_dialer(n: i32) -> i32 {

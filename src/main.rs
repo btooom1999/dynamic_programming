@@ -1,4 +1,4 @@
-#![allow(unused)]
+#![allow(dead_code)]
 
 mod fibonacci;
 mod buy_tickets_problem;
@@ -63,9 +63,9 @@ mod largest_plus_sign;
 mod largest_1_bordered_square;
 mod target_sum;
 mod edit_distance;
-mod number_of_dice_rolls_with_target_sum;
 mod minimum_falling_path_sum;
+mod longest_ideal_subsequence;
 
 fn main() {
-   minimum_falling_path_sum::main();
+    longest_ideal_subsequence::main();
 }

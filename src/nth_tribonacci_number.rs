@@ -4,7 +4,6 @@ fn tribonacci(n: i32) -> i32 {
         return (n != 0) as i32;
     }
 
-    let mut sum = 0;
     let mut dp = vec![0; n+1];
     dp[1] = 1;
     dp[2] = 1;

@@ -1,11 +1,10 @@
 pub fn main() {
     let n = 4;
-    let k = 1; // the number of broken steps
     let broken_steps = [2];
 
     let mut dp = vec![0; n+1];
     dp[1] = 1;
-    
+
     // 0 is secure steps
     // 1 is insecure steps
     let mut status_of_steps = vec![0;n+1];

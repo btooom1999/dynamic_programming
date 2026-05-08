@@ -1,6 +1,5 @@
 fn mincost_tickets(days: Vec<i32>, costs: Vec<i32>) -> i32 {
     let last_day = days[days.len()-1] as usize;
-    let min = *costs.iter().min().unwrap_or(&0);
     let mut exist_days = vec![false; last_day + 2];
     for &day in &days {
         exist_days[day as usize] = true;

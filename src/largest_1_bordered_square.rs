@@ -27,7 +27,7 @@ fn largest1_bordered_square(grid: Vec<Vec<i32>>) -> i32 {
     }
 
     for i in (1..m+1).rev() {
-        for j in (1..n+1) {
+        for j in 1..n+1 {
             if grid[i-1][j-1] == 1 {
                 dp[i][j][3] = dp[i+1][j][3] + 1;
             }

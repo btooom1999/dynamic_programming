@@ -9,7 +9,7 @@ pub fn main() {
     }
 
     for i in k+1..=n {
-        dp.push(dp[(i-1)] + dp[(i-k-1)]);
+        dp.push(dp[i-1] + dp[i-k-1]);
     }
 
     println!("{}", dp[n]);
