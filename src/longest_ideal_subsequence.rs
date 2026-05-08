@@ -2,8 +2,6 @@ fn longest_ideal_string(s: String, k: i32) -> i32 {
     let n = s.len();
     let s = s.as_bytes();
     let mut hashmap = [0;26];
-    let mut dp = vec![0; n];
-    dp[n-1] = 1;
     hashmap[(s[n-1]-b'a') as usize] = 1;
 
     let mut res = 1;
@@ -14,9 +12,8 @@ fn longest_ideal_string(s: String, k: i32) -> i32 {
             maximum = maximum.max(hashmap[i as usize]);
         }
 
-        dp[i] = maximum + 1;
-        hashmap[num as usize] = dp[i];
-        res = res.max(dp[i]);
+        hashmap[num as usize] = maximum+1;
+        res = res.max(maximum+1);
     }
 
     res

@@ -65,7 +65,8 @@ mod target_sum;
 mod edit_distance;
 mod minimum_falling_path_sum;
 mod longest_ideal_subsequence;
+mod count_number_of_teams;
 
 fn main() {
-    longest_ideal_subsequence::main();
+    count_number_of_teams::main();
 }
