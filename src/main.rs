@@ -68,7 +68,8 @@ mod longest_ideal_subsequence;
 mod count_number_of_teams;
 mod out_of_boundary_paths;
 mod flip_string_to_monotone_increasing;
+mod palindrome_partitioning;
 
 fn main() {
-    flip_string_to_monotone_increasing::main();
+    palindrome_partitioning::main();
 }
