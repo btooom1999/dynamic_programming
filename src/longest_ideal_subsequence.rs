@@ -1,25 +1,21 @@
-use std::collections::HashMap;
-
 fn longest_ideal_string(s: String, k: i32) -> i32 {
     let n = s.len();
     let s = s.as_bytes();
-    let mut hashmap = HashMap::new();
+    let mut hashmap = [0;26];
     let mut dp = vec![0; n];
     dp[n-1] = 1;
-    hashmap.insert((s[n-1]-b'a') as i32, 1);
+    hashmap[(s[n-1]-b'a') as usize] = 1;
 
-    let mut res = dp[n-1];
+    let mut res = 1;
     for i in (0..n-1).rev() {
         let num = (s[i]-b'a') as i32;
         let mut maximum = 0;
-        for i in num-k..num+k+1 {
-            if let Some(&max) = hashmap.get(&i) {
-                maximum = maximum.max(max);
-            }
+        for i in (num-k).max(0)..(num+k+1).min(26) {
+            maximum = maximum.max(hashmap[i as usize]);
         }
 
         dp[i] = maximum + 1;
-        hashmap.insert(num, dp[i]);
+        hashmap[num as usize] = dp[i];
         res = res.max(dp[i]);
     }
 
