@@ -66,7 +66,9 @@ mod edit_distance;
 mod minimum_falling_path_sum;
 mod longest_ideal_subsequence;
 mod count_number_of_teams;
+mod out_of_boundary_paths;
+mod flip_string_to_monotone_increasing;
 
 fn main() {
-    count_number_of_teams::main();
+    flip_string_to_monotone_increasing::main();
 }
