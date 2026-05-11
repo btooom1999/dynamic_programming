@@ -69,7 +69,8 @@ mod count_number_of_teams;
 mod out_of_boundary_paths;
 mod flip_string_to_monotone_increasing;
 mod palindrome_partitioning;
+mod stone_game_2;
 
 fn main() {
-    palindrome_partitioning::main();
+    stone_game_2::main();
 }
