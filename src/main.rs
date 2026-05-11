@@ -70,7 +70,8 @@ mod out_of_boundary_paths;
 mod flip_string_to_monotone_increasing;
 mod palindrome_partitioning;
 mod stone_game_2;
+mod super_ugly_number;
 
 fn main() {
-    stone_game_2::main();
+    super_ugly_number::main();
 }
