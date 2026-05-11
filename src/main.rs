@@ -71,7 +71,8 @@ mod flip_string_to_monotone_increasing;
 mod palindrome_partitioning;
 mod stone_game_2;
 mod super_ugly_number;
+mod integer_replacement;
 
 fn main() {
-    super_ugly_number::main();
+    integer_replacement::main();
 }
