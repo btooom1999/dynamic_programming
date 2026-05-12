@@ -73,7 +73,8 @@ mod stone_game_2;
 mod super_ugly_number;
 mod integer_replacement;
 mod rotate_function;
+mod can_i_win;
 
 fn main() {
-    rotate_function::main();
+    can_i_win::main();
 }
