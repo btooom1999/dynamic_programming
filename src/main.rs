@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-mod fibonacci;
+mod fibonacci_number;
 mod buy_tickets_problem;
 mod maximum_path_sum_in_a_matrix;
 mod domino_tile;
@@ -74,7 +74,8 @@ mod super_ugly_number;
 mod integer_replacement;
 mod rotate_function;
 mod can_i_win;
+mod matchsticks_to_square;
 
 fn main() {
-    can_i_win::main();
+    fibonacci_number::main();
 }
