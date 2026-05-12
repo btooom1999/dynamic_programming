@@ -72,7 +72,8 @@ mod palindrome_partitioning;
 mod stone_game_2;
 mod super_ugly_number;
 mod integer_replacement;
+mod rotate_function;
 
 fn main() {
-    integer_replacement::main();
+    rotate_function::main();
 }
