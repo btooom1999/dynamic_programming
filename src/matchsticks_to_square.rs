@@ -1,42 +1,27 @@
 fn dfs(
-    sum: i32,
-    target: i32,
-    need: i32,
+    i: usize,
     matchsticks: &Vec<i32>,
-    visited: &mut i32,
-    dp: &mut Vec<Vec<bool>>,
+    side: i32,
+    sides: &mut [i32; 4],
 ) -> bool {
-    if need == 0 {
-        return true;
+    if i == matchsticks.len() {
+        return sides.iter().all(|&s| s == side);
     }
 
-    let i = *visited as usize;
-    let j = need as usize;
-    if dp[i][j] {
-        return false;
-    }
-
-    for i in 0..matchsticks.len() {
-        let value = sum + matchsticks[i];
-        if *visited & (1 << i) == 0 || value > target {
-            continue;
+    for j in 0..4 {
+        if sides[j] + matchsticks[i] <= side {
+            sides[j] += matchsticks[i];
+            if dfs(i+1, matchsticks, side, sides) {
+                return true;
+            }
+            sides[j] -= matchsticks[i];
         }
-
-        *visited ^= 1 << i;
-        let is_valid = value == target;
-        let need = need - is_valid as i32;
-        let value = if is_valid { 0 } else { value };
-        if dfs(value, target, need, matchsticks, visited, dp) {
-            return true;
-        }
-        *visited ^= 1 << i;
     }
 
-    dp[i][j] = true;
     false
 }
 
-fn makesquare(matchsticks: Vec<i32>) -> bool {
+fn makesquare(mut matchsticks: Vec<i32>) -> bool {
     let n = matchsticks.len();
     if n < 4 {
         return false;
@@ -47,11 +32,11 @@ fn makesquare(matchsticks: Vec<i32>) -> bool {
         return false;
     }
 
-    let n = 1 << (n+1);
-    dfs(0, sum/4, 4, &matchsticks, &mut (n-1), &mut vec![vec![false; 5]; n as usize])
+    matchsticks.sort_by(|a, b| b.cmp(a));
+    dfs(0, &matchsticks, sum/4, &mut [0;4])
 }
 
 pub fn main() {
-    let matchsticks = [1,1,6,6,8].to_vec();
+    let matchsticks = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,6].to_vec();
     println!("{}", makesquare(matchsticks));
 }

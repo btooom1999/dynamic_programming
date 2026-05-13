@@ -77,5 +77,5 @@ mod can_i_win;
 mod matchsticks_to_square;
 
 fn main() {
-    fibonacci_number::main();
+    matchsticks_to_square::main();
 }
