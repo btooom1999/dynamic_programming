@@ -77,7 +77,8 @@ mod can_i_win;
 mod matchsticks_to_square;
 mod partition_to_k_equal_sum_subsets;
 mod count_number_of_maximum_bitwise_or_subsets;
+mod delete_operation_for_two_strings;
 
 fn main() {
-    count_number_of_maximum_bitwise_or_subsets::main();
+    delete_operation_for_two_strings::main();
 }
