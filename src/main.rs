@@ -75,7 +75,8 @@ mod integer_replacement;
 mod rotate_function;
 mod can_i_win;
 mod matchsticks_to_square;
+mod partition_to_k_equal_sum_subsets;
 
 fn main() {
-    matchsticks_to_square::main();
+    partition_to_k_equal_sum_subsets::main();
 }
