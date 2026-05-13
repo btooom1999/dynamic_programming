@@ -76,7 +76,8 @@ mod rotate_function;
 mod can_i_win;
 mod matchsticks_to_square;
 mod partition_to_k_equal_sum_subsets;
+mod count_number_of_maximum_bitwise_or_subsets;
 
 fn main() {
-    partition_to_k_equal_sum_subsets::main();
+    count_number_of_maximum_bitwise_or_subsets::main();
 }
