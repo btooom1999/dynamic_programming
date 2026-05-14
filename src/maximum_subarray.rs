@@ -1,10 +1,10 @@
 fn max_sub_array(nums: Vec<i32>) -> i32 {
-    let n = nums.len();
-    let mut max = 0;
-    let mut res = i32::MIN;
-    for i in (0..n).rev() {
-        max = nums[i].max(nums[i]+max);
-        res = res.max(max);
+    let mut sum = nums[0];
+    let mut res = nums[0];
+
+    for i in 1..nums.len() {
+        sum = nums[i].max(sum+nums[i]);
+        res = res.max(sum);
     }
 
     res
