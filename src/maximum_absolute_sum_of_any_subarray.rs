@@ -1,15 +1,13 @@
 fn max_absolute_sum(nums: Vec<i32>) -> i32 {
-    let mut candidate = 0;
-    let mut res = 0;
-    for i in (0..nums.len()).rev() {
-        candidate = nums[i].max(nums[i]+candidate);
-        res = res.max(candidate);
-    }
+    let mut min = nums[0];
+    let mut max = min;
+    let mut res = min.abs();
 
-    candidate = 0;
-    for i in (0..nums.len()).rev() {
-        candidate = nums[i].min(nums[i]+candidate);
-        res = res.max(candidate.abs());
+    for i in 1..nums.len() {
+        let temp = [nums[i], nums[i]+min, nums[i]+max];
+        min = *temp.iter().min().unwrap();
+        max = *temp.iter().max().unwrap();
+        res = res.max(min.abs()).max(max.abs());
     }
 
     res

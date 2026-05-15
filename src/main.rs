@@ -82,5 +82,5 @@ mod sort_integers_by_the_power_value;
 mod maximum_product_subarray;
 
 fn main() {
-    maximum_product_subarray::main();
+    maximum_absolute_sum_of_any_subarray::main();
 }
