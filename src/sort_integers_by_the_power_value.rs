@@ -22,8 +22,9 @@ fn transform(num: i32, memo: &mut HashMap<i32, i32>) -> i32 {
 
 fn get_kth(lo: i32, hi: i32, k: i32) -> i32 {
     let mut res = Vec::with_capacity((hi-lo+1) as usize);
+    let mut memo = HashMap::new();
     for num in lo..hi+1 {
-        let steps = transform(num, &mut HashMap::new());
+        let steps = transform(num, &mut memo);
         res.push((num, steps));
     }
 

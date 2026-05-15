@@ -79,7 +79,8 @@ mod partition_to_k_equal_sum_subsets;
 mod count_number_of_maximum_bitwise_or_subsets;
 mod delete_operation_for_two_strings;
 mod sort_integers_by_the_power_value;
+mod maximum_product_subarray;
 
 fn main() {
-    sort_integers_by_the_power_value::main();
+    maximum_product_subarray::main();
 }
