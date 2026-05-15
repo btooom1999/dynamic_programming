@@ -80,7 +80,8 @@ mod count_number_of_maximum_bitwise_or_subsets;
 mod delete_operation_for_two_strings;
 mod sort_integers_by_the_power_value;
 mod maximum_product_subarray;
+mod find_the_substring_with_maximum_cost;
 
 fn main() {
-    maximum_absolute_sum_of_any_subarray::main();
+    find_the_substring_with_maximum_cost::main();
 }
