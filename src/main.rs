@@ -51,7 +51,6 @@ mod unique_paths_2;
 mod minimum_path_sum;
 mod longest_common_subsequence;
 mod length_of_longest_fibonacci_subsequence;
-mod best_time_to_buy_and_sell_stock_with_cooldown;
 mod coin_change_2;
 mod stone_game;
 mod maximum_square;
@@ -81,7 +80,8 @@ mod delete_operation_for_two_strings;
 mod sort_integers_by_the_power_value;
 mod maximum_product_subarray;
 mod find_the_substring_with_maximum_cost;
+mod best_time_to_buy_and_sell_stock_with_cooldown;
 
 fn main() {
-    find_the_substring_with_maximum_cost::main();
+    longest_increasing_subsequence::main();
 }
