@@ -23,7 +23,6 @@ fn dfs(
 
         }
     }
-
     *max_len = std::cmp::max(*max_len, count.0);
 
     dp[idx] = count;
@@ -49,6 +48,6 @@ fn find_number_of_lis(nums: Vec<i32>) -> i32 {
 }
 
 pub fn main() {
-    let nums = [2,2,2,2,2];
+    let nums = [1,3,5,4,7];
     println!("{}", find_number_of_lis(nums.into()));
 }

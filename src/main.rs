@@ -81,7 +81,9 @@ mod sort_integers_by_the_power_value;
 mod maximum_product_subarray;
 mod find_the_substring_with_maximum_cost;
 mod best_time_to_buy_and_sell_stock_with_cooldown;
+mod predict_the_winner;
+mod beautiful_arrangement;
 
 fn main() {
-    longest_increasing_subsequence::main();
+    beautiful_arrangement::main();
 }
