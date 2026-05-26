@@ -89,7 +89,8 @@ mod optimal_division;
 mod knight_probability_in_chessboard;
 mod minimum_ascii_delete_sum_for_two_strings;
 mod best_time_to_buy_and_sell_stock_with_transaction_fee;
+mod cheapest_flights_within_k_stops;
 
 fn main() {
-    best_time_to_buy_and_sell_stock_with_transaction_fee::main();
+    cheapest_flights_within_k_stops::main();
 }
