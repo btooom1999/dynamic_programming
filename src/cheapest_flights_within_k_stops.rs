@@ -19,7 +19,7 @@ fn find_cheapest_price(n: i32, flights: Vec<Vec<i32>>, src: i32, dst: i32, k: i3
             res = res.min(price);
         }
 
-        if count == k {
+        if count == k || price >= res {
             continue;
         }
 
