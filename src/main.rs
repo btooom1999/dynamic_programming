@@ -85,7 +85,9 @@ mod predict_the_winner;
 mod beautiful_arrangement;
 mod beautiful_arrangement_2;
 mod shopping_offers;
+mod optimal_division;
+mod knight_probability_in_chessboard;
 
 fn main() {
-    shopping_offers::main();
+    knight_probability_in_chessboard::main();
 }
