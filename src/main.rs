@@ -87,7 +87,8 @@ mod beautiful_arrangement_2;
 mod shopping_offers;
 mod optimal_division;
 mod knight_probability_in_chessboard;
+mod minimum_ascii_delete_sum_for_two_strings;
 
 fn main() {
-    knight_probability_in_chessboard::main();
+    minimum_ascii_delete_sum_for_two_strings::main();
 }
