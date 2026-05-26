@@ -84,7 +84,8 @@ mod best_time_to_buy_and_sell_stock_with_cooldown;
 mod predict_the_winner;
 mod beautiful_arrangement;
 mod beautiful_arrangement_2;
+mod shopping_offers;
 
 fn main() {
-    beautiful_arrangement_2::main();
+    shopping_offers::main();
 }
