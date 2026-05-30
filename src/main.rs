@@ -96,7 +96,8 @@ mod new_21_game;
 mod video_stitching;
 mod divisor_game;
 mod longest_arithmetic_subsequence;
+mod maximum_sum_of_two_non_overlapping_subarrays;
 
 fn main() {
-    longest_arithmetic_subsequence::main();
+    maximum_sum_of_two_non_overlapping_subarrays::main();
 }
