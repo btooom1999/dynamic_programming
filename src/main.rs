@@ -95,7 +95,8 @@ mod domino_and_tromino_tiling;
 mod new_21_game;
 mod video_stitching;
 mod divisor_game;
+mod longest_arithmetic_subsequence;
 
 fn main() {
-    divisor_game::main();
+    longest_arithmetic_subsequence::main();
 }
