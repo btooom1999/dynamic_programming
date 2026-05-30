@@ -93,7 +93,8 @@ mod cheapest_flights_within_k_stops;
 mod rotated_digits;
 mod domino_and_tromino_tiling;
 mod new_21_game;
+mod video_stitching;
 
 fn main() {
-    new_21_game::main();
+    video_stitching::main();
 }
