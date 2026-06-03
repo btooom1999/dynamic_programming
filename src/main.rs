@@ -97,7 +97,9 @@ mod video_stitching;
 mod divisor_game;
 mod longest_arithmetic_subsequence;
 mod maximum_sum_of_two_non_overlapping_subarrays;
+mod interleaving_string;
+mod different_ways_to_add_parentheses;
 
 fn main() {
-    maximum_sum_of_two_non_overlapping_subarrays::main();
+    different_ways_to_add_parentheses::main();
 }
