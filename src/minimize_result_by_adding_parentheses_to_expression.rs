@@ -6,16 +6,14 @@ fn minimize_result(expression: String) -> String {
     for i in 0..left.len() {
         for j in 0..right.len() {
             let num1 = &left[0..i];
-            let num2 = &left[i..left.len()];
             let num3 = &right[0..j];
-            let num4 = &right[j..right.len()];
 
-            let val1 = String::from_utf8(num2.to_vec()).unwrap().parse::<i32>().unwrap();
-            let val2 = String::from_utf8(num4.to_vec()).unwrap().parse::<i32>().unwrap();
+            let val1 = String::from_utf8(left[i..left.len()].to_vec()).unwrap().parse::<i32>().unwrap();
+            let val2 = String::from_utf8(right[j..right.len()].to_vec()).unwrap().parse::<i32>().unwrap();
 
             match (num1.is_empty(), num3.is_empty()) {
                 (true, true) => {
-                    res.0 = res.0.min(val1 + val2);
+                    res.0 = val1 + val2;
                 }
                 (true, false) => {
                     let product = val2;

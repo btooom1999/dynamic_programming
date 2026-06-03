@@ -100,7 +100,8 @@ mod maximum_sum_of_two_non_overlapping_subarrays;
 mod interleaving_string;
 mod different_ways_to_add_parentheses;
 mod minimize_result_by_adding_parentheses_to_expression;
+mod solve_the_equation;
 
 fn main() {
-    minimize_result_by_adding_parentheses_to_expression::main();
+    solve_the_equation::main();
 }
