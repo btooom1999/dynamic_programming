@@ -101,7 +101,8 @@ mod interleaving_string;
 mod different_ways_to_add_parentheses;
 mod minimize_result_by_adding_parentheses_to_expression;
 mod solve_the_equation;
+mod guess_number_higher_or_lower_2;
 
 fn main() {
-    solve_the_equation::main();
+    guess_number_higher_or_lower_2::main();
 }
