@@ -102,7 +102,9 @@ mod different_ways_to_add_parentheses;
 mod minimize_result_by_adding_parentheses_to_expression;
 mod solve_the_equation;
 mod guess_number_higher_or_lower_2;
+mod maximum_non_negative_product_in_a_matrix;
+mod maximum_product_of_two_integers_with_no_common_bits;
 
 fn main() {
-    guess_number_higher_or_lower_2::main();
+    maximum_product_of_two_integers_with_no_common_bits::main();
 }

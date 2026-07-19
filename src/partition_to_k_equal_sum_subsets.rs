@@ -1,59 +1,40 @@
-fn dfs(
-    k: usize,
+fn backtracking(
+    idx: usize,
+    nums: &[i32],
+    buckets: &mut [i32],
     target: i32,
-    sum: i32,
-    visited: &mut usize,
-    nums: &Vec<i32>,
-    memo: &mut Vec<Vec<bool>>,
 ) -> bool {
-    if k == 0 {
-        return *visited == 0;
+    if idx == nums.len() {
+        return true;
     }
 
-    if sum == target {
-        return dfs(k-1, target, 0, visited, nums, memo);
-    }
-
-    if memo[*visited][k] {
-        return false;
-    }
-
-    for i in 0..nums.len() {
-        if sum + nums[i] > target {
-            break;
-        }
-        if *visited & (1 << i) == 0 {
+    let mut hashset = std::collections::HashSet::new();
+    for i in 0..buckets.len() {
+        let sum = buckets[i];
+        if !hashset.insert(sum) || sum + nums[idx] > target {
             continue;
         }
 
-        *visited ^= 1 << i;
-        if dfs(k, target, sum+nums[i], visited, nums, memo) {
-            return true;
-        }
-        *visited ^= 1 << i;
+        buckets[i] += nums[idx];
+        if backtracking(idx+1, nums, buckets, target) { return true; }
+        buckets[i] -= nums[idx];
     }
 
-
-    memo[*visited][k] = true;
     false
 }
 
 fn can_partition_k_subsets(mut nums: Vec<i32>, k: i32) -> bool {
-    let n = nums.len();
-    if n < k as usize {
-        return false;
-    }
-
     let sum = nums.iter().sum::<i32>();
-    if sum % k != 0 {
-        return false;
-    }
+    if sum % k > 0 { return false; }
 
-    let n = (1 << n) as usize;
     let target = sum / k;
-    let k = k as usize;
-    nums.sort();
-    dfs(k, target, 0, &mut (n-1), &nums, &mut vec![vec![false; k+1]; n])
+
+    nums.sort_by(|a, b| b.cmp(a));
+    if nums[0] > target { return false; }
+
+    let mut buckets = vec![0; k as usize];
+
+    backtracking(0, &nums, &mut buckets, target)
 }
 
 pub fn main() {
