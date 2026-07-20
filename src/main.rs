@@ -104,7 +104,8 @@ mod solve_the_equation;
 mod guess_number_higher_or_lower_2;
 mod maximum_non_negative_product_in_a_matrix;
 mod maximum_product_of_two_integers_with_no_common_bits;
+mod longest_increasing_path_in_a_matrix;
 
 fn main() {
-    maximum_product_of_two_integers_with_no_common_bits::main();
+    longest_increasing_path_in_a_matrix::main();
 }
