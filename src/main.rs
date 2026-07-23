@@ -106,7 +106,8 @@ mod maximum_non_negative_product_in_a_matrix;
 mod maximum_product_of_two_integers_with_no_common_bits;
 mod longest_increasing_path_in_a_matrix;
 mod number_of_increasing_paths_in_a_grid;
+mod dungeon_game;
 
 fn main() {
-    number_of_increasing_paths_in_a_grid::main();
+    dungeon_game::main();
 }
